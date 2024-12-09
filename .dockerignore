@@ -1,0 +1,18 @@
+# 排除虚拟环境
+venv/
+
+# 排除数据库文件（如果你希望在运行时挂载而不是直接打包）
+cdkeys.db
+
+# 排除文档文件
+notes.md
+
+# 排除 IDE 配置文件
+*.idea/
+*.vscode/
+
+# 排除git目录
+.git
+
+# 排除打包的镜像文件
+cdkey-verify-app.tar
