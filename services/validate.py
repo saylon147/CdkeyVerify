@@ -17,7 +17,7 @@ def validate_cdkey(cdkey):
         return jsonify({'status': 'error', 'message': 'Invalid CDKey'}), 400
 
     if row[0] == 1:
-        return jsonify({'status': 'error', 'message': 'CDKey is already used'}), 400
+        return jsonify({'status': 'success', 'message': 'CDKey is valid but already used'}), 201
 
     cursor.execute("UPDATE cdkeys SET is_used = 1 WHERE key = ?", (cdkey,))
     conn.commit()

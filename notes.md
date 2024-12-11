@@ -10,7 +10,7 @@
 3. cmd下运行
    1. 生成 CDKey
    ```
-   curl -X POST http://127.0.0.1:5000/generate -H "Content-Type: application/json" -d "{\"count\": 5}"
+   curl -X POST http://127.0.0.1:5000/generate -H "Content-Type: application/json" -d "{\"count\": 10}"
    ```
    2. 获取未使用的 CDKey
    ```
@@ -73,7 +73,7 @@
       ```
       docker build -t cdkey-verify-app .
       ```
-      - 拉取官方镜像文件如果失败，需要设置 DockerDesktop 的设置，Docker Engine 添加设置后重启 DockerDesktop。
+      - 拉取官方镜像文件如果失败，需要设置 DockerDesktop 的设置，Docker Engine 添加设置后重启 DockerDesktop。**换了镜像别开VPN**
       ```
       "registry-mirrors": [
          "https://docker.m.daocloud.io"
